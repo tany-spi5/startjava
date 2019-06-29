@@ -3,21 +3,21 @@ import java.util.Scanner;
 	    public static void main (String[] args) {
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Your name begin with letter");
-			String letter=scan.nextLine();
+			String letter = scan.nextLine();
 			System.out.println(letter);
-			int yourAge=40;
+			int yourAge = 40;
 			if (yourAge > 20) {
      	    	System.out.println("My age > 20");
 			}
-			boolean isMan=false;
+			boolean isMan = false;
 			if (isMan == true) {
 				System.out.println ("I am a man");
 			}
-			boolean isWoman=true;
+			boolean isWoman = true;
 			if (isWoman == true) {
 				System.out.println ("I am a woman");
 			}
-			float growth=1.64f;
+			float growth = 1.64f;
 			if (growth < 1.80) {
 				System.out.println ("My growth < 1.80");
 			} else {

@@ -12,15 +12,15 @@ public class Cycle {
 		System.out.println(" ");
 		int h = 10;
 		int sum = 0;
-		do{
+		do {
 			if (h % 2 == 0) {
 			//	System.out.println(h + " even");
-			}	else {
+			} else {
 				System.out.println(h + " odd");
 				sum += h;
-				}			
+			  }			
 			h++;
-		}	while (h <= 20);
+		} while (h <= 20);
 		System.out.println(sum + " sum odd ");
 	}
  }
