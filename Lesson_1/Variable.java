@@ -1,21 +1,21 @@
 public class Variable {
-    public static void main (String[] args)	{
-	    byte quantity = 1;
-        short quantity1 = 32000;
-        int quantity2 = 1000000;
-        long quantity3 = 20000000000L;
-        float speed = 2.67f;
-        double quantity4 = 0.000045158458;
-        char letter = 'Z';
-        boolean сheck = true;
+    public static void main (String[] args) {
+    byte pen = 1;
+    short pea = 32000;
+    int pencil = 1000000;
+    long penny = 20000000000L;
+    float speed = 2.67f;
+    double quantity = 0.000045158458;
+    char letter = 'Z';
+    boolean сheck = true;
 
-        System.out.println("quantity = " + quantity);
-        System.out.println("quantity1 = " + quantity1);
-        System.out.println("quantity2 = " + quantity2);
-        System.out.println("quantity3 = " + quantity3);
-        System.out.println("speed = " + speed);
-        System.out.println("quantity4 = " + String.format("%.12f",quantity4));
-        System.out.println("letter = " + letter);	
-        System.out.println("check = " + сheck);
+    System.out.println("pen = " + pen);
+    System.out.println("pea = " + pea);
+    System.out.println("pencil = " + pencil);
+    System.out.println("penny = " + penny);
+    System.out.println("speed = " + speed);
+    System.out.println("quantity = " + String.format("%.12f",quantity));
+    System.out.println("letter = " + letter);	
+    System.out.println("check = " + сheck);
     }
 }
