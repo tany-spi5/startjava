@@ -16,6 +16,6 @@ public class Variable {
     System.out.println("speed = " + speed);
     System.out.println("quantity = " + String.format("%.12f",quantity));
     System.out.println("letter = " + letter);	
-    System.out.println("check = " + сheck);
+    System.out.println("check  = " + сheck);
     }
 }

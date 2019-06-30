@@ -7,7 +7,7 @@ class Calculator {
     int number2 = k.nextInt();
     System.out.println("number1 = " + number1);
     System.out.println("number2 = " + number2);
-    System.out.println("introduce operation +-*/^%");
+    System.out.println("introduce operation  +-*/^%");
     String operation = k.next();
     System.out.println("operation = " + operation);
     int sum = 0;

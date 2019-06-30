@@ -2,7 +2,7 @@ import java.util.Scanner;
 class ConditionalStatement {
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Your name begin with letter");
+        System.out.println("Your name begin with letter ");
         String letter = scan.nextLine();
         System.out.println(letter);
         int yourAge = 40;
