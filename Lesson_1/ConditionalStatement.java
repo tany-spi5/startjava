@@ -1,33 +1,33 @@
 public class ConditionalStatement {
-    public static void main (String[] args) {
-        int Age = 40;
-        if (Age > 20) {
+    public static void main(String[] args) {
+        int age = 40;
+        if (age > 20) {
             System.out.println("My age > 20");
         }
         System.out.println();
-        boolean IsMan = false;
-        if (IsMan) {
+        boolean isMan = false;
+        if (isMan) {
             System.out.println("I am a man");
         }
-        if (!IsMan) {
+        if (!isMan) {
             System.out.println("I am a woman");
         }
         System.out.println();
-        float Growth = 1.64f;
-        if (Growth < 1.80) {
+        float growth = 1.64f;
+        if (growth < 1.80) {
             System.out.println ("My growth < 1.80");
         } else {
             System.out.println ("My growth > 1.80");
         }
         System.out.println();
-        String Letter = "T";
-        System.out.println(Letter);
-        if (Letter == "M") {
+        String letter = "T";
+        System.out.println(letter);
+        if (letter == "M") {
             System.out.println ("my name begin with M");
-        } else if (Letter == "I") {
+        } else if (letter == "I") {
             System.out.println ("my name begin with I");
         } else {
-            System.out.println ("my name begin with " + Letter);
+            System.out.println ("my name begin with " + letter);
         }
         System.out.println();
     }
