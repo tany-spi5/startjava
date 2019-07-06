@@ -7,29 +7,30 @@ public class Calculator {
         String operation = "+";
         //System.out.println("operation = " + operation);
         int result = 0;
-        if (operation == "+") {
+        System.out.println();
+        if (operation.equals("+")) {
             result = number1 + number2;
-            System.out.println("+ result = " + result);
-        } else if (operation == "-") {
+            System.out.println("sum result = " + result);
+        } else if (operation.equals("-")) {
             result = number1 - number2;
-            System.out.println("-  result = " + result);
-        } else if (operation == "*") {
+            System.out.println("difference  result = " + result);
+        } else if (operation.equals("*")) {
             result = number1 * number2;
-            System.out.println("*  result = " + result);
-        } else if (operation == "/") {
+            System.out.println("increase result = " + result);
+        } else if (operation.equals("/")) {
             result = number1 / number2;
-            System.out.println("/  result = " + result);
-        } else if (operation == "^") {
+            System.out.println("division result = " + result);
+        } else if (operation.equals("^")) {
             result = 1; 
             for(int i = 1; i <= number2; i++) {
-                result = result * number1;
+                result*=number1;
             }
-            System.out.println("^  result = " + result);
-        } else if (operation == "%") {
+            System.out.println("degree  result = " + result);
+        } else if (operation.equals("%")) {
             result = number1 % number2;
             System.out.println("%  result = " + result);
         } else {
-            System.out.println("operation = " + operation);
+            System.out.println("operation  don't support= " + operation);
         }
     }
 } 
