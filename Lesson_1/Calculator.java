@@ -5,30 +5,25 @@ public class Calculator {
         System.out.println("number1 = " + number1);
         System.out.println("number2 = " + number2);
         String operation = "+";
-        //System.out.println("operation = " + operation);
-        int result = 0;
+        //int result = 0;
         System.out.println();
         if (operation.equals("+")) {
-            result = number1 + number2;
-            System.out.println("sum result = " + result);
+            System.out.println("sum result = " + ( number1 + number2));
         } else if (operation.equals("-")) {
-            result = number1 - number2;
-            System.out.println("difference  result = " + result);
+            System.out.println("difference  result = " + (number1 - number2));
         } else if (operation.equals("*")) {
-            result = number1 * number2;
-            System.out.println("increase result = " + result);
+            System.out.println("increase result = " + ( number1 * number2));
         } else if (operation.equals("/")) {
-            result = number1 / number2;
-            System.out.println("division result = " + result);
+            System.out.println("division result = " + ( number1 / number2));
         } else if (operation.equals("^")) {
+            int result = 0;
             result = 1; 
             for(int i = 1; i <= number2; i++) {
-                result*=number1;
+                result *= number1;
             }
             System.out.println("degree  result = " + result);
         } else if (operation.equals("%")) {
-            result = number1 % number2;
-            System.out.println("%  result = " + result);
+            System.out.println("%  result = " + (number1 % number2));
         } else {
             System.out.println("operation  don't support= " + operation);
         }
