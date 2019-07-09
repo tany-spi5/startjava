@@ -5,8 +5,8 @@ public class Calculator {
         System.out.println("number1 = " + number1);
         System.out.println("number2 = " + number2);
         String operation = "+";
-        //int result = 0;
         System.out.println();
+
         if (operation.equals("+")) {
             System.out.println("sum result = " + ( number1 + number2));
         } else if (operation.equals("-")) {
@@ -16,8 +16,7 @@ public class Calculator {
         } else if (operation.equals("/")) {
             System.out.println("division result = " + ( number1 / number2));
         } else if (operation.equals("^")) {
-            int result = 0;
-            result = 1; 
+            int result = 1;
             for(int i = 1; i <= number2; i++) {
                 result *= number1;
             }
@@ -25,7 +24,7 @@ public class Calculator {
         } else if (operation.equals("%")) {
             System.out.println("%  result = " + (number1 % number2));
         } else {
-            System.out.println("operation  don't support= " + operation);
+            System.out.println("operation  don't support = " + operation);
         }
     }
 } 
