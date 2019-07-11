@@ -1,13 +1,13 @@
 public class Game {
     public static void main(String[] args) {
         int puzzleNumber = 45;
-        int introduceNumber;  // число от 1 до 1000
-        for (introduceNumber = 1; introduceNumber <= 1000; introduceNumber++) {
-            if (puzzleNumber == introduceNumber) {
-                System.out.println("find number =" + introduceNumber);
+        int playerNumber;  // число от 1 до 1000
+        for (playerNumber = 1; playerNumber <= 1000; playerNumber++) {
+            if (puzzleNumber == playerNumber) {
+                System.out.println("find number =" + playerNumber);
                 break;
             } else {
-                System.out.println("introduce number < puzzle number   " +  introduceNumber);
+                System.out.println("introduce number < puzzle number   " +  playerNumber);
             }
         }
     }
