@@ -1,9 +1,9 @@
 public class Person {
-    char floor='w';
-    String Name="Tanya";
-    float height=164.5f;
-    float weight=55.7f;
-    int age=30;
+    char floor = 'w';
+    String Name = "Tanya";
+    float height = 164.5f;
+    float weight = 55.7f;
+    int age = 30;
     void move() {
         System.out.println("you went 5 steps");
     }
