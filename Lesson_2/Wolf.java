@@ -1,9 +1,9 @@
 public class Wolf {
-    char floor = 'm';
-    String nickname = "Piter";
-    float weight = 35f;
-    int age = 20;
-    String harlequin = "gray";
+    char sex;
+    String nickname;
+    float weight;
+    int age;
+    String color;
 
     void move() {
         System.out.println("you went 1 kilometer");
@@ -24,5 +24,4 @@ public class Wolf {
     void hunt() {
         System.out.println("you hunted often");
     }
-
 }
