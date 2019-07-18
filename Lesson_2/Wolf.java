@@ -8,6 +8,7 @@ public class Wolf {
     public char getSex() {
         return sex;
     }
+
     void setSex(char sex) {
         if (sex == ' ') {
             System.out.println("empty meaning");
@@ -15,19 +16,23 @@ public class Wolf {
             this.sex = sex;
         }
     }
+
     public String getNickname() {
         return nickname;
     }
+
     void setNickname(String nickname) {
-        if (nickname == "") {
+        if (nickname.equals("")) {
             System.out.println("empty meaning");
         } else {
             this.nickname = nickname;
         }
     }
+
     public float getWeight() {
         return weight;
     }
+
     void setWeight(float weight) {
         if (weight == 0) {
             System.out.println("zero");
@@ -35,9 +40,11 @@ public class Wolf {
             this.weight = weight;
         }
     }
+
     public int getAge() {
         return age;
     }
+
     void setAge(int age) {
         if (age > 8) {
             System.out.println("incorrect age");
@@ -45,16 +52,19 @@ public class Wolf {
             this.age = age;
         }
     }
+
     public String getColor() {
         return color;
     }
+
     void setColor(String color) {
-        if (color == "") {
+        if (color.equals("")) {
             System.out.println("empty meaning");
         } else {
             this.color = color;
         }
     }
+
     public void move() {
         System.out.println("you went 1 kilometer");
     }
