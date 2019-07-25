@@ -1,13 +1,13 @@
 public class Calculator {
-    private int number1 = 123;
-    private int number2 = 3;
-    private String operation = "+";
+    private int number1;
+    private int number2;
+    private String operation;
 
     public int getNumber1() {
         return number1;
     }
 
-    void setNumber1(int number1) {
+    public void setNumber1(int number1) {
         if (number1 == 0) {
             System.out.println("zero");
         } else {
@@ -19,7 +19,7 @@ public class Calculator {
         return number2;
     }
     
-    void setNumber2(int number2) {
+    public void setNumber2(int number2) {
         if (number2 == 0) {
             System.out.println("zero");
         } else {
@@ -31,15 +31,15 @@ public class Calculator {
         return operation;
     }
 
-    void setOperation(String operation) {
+    public void setOperation(String operation) {
         if (operation == "") {
             System.out.println("empty meaning");
         } else {
             this.operation = operation;
         }
     }
-        void calc() {
-            switch (operation) {
+    public void calc() {
+        switch (operation) {
             case "+":
                 System.out.println("sum result = " + ( number1 + number2));
                 break;

@@ -1,25 +1,41 @@
 import java.util.Scanner;
 public class CalculatorTest {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("introduce 2 whole number");
+        int i = 1;
         
-        int number10 = scan.nextInt();
-        int number20 = scan.nextInt();
-        Scanner k = new Scanner(System.in);
-        System.out.println("introduce operation");
-        String operation1 = k.next();
-        System.out.println(operation1);
+        Scanner scan = new Scanner(System.in);
+        while (i >= 1) {
+            System.out.print("introduce first number");
+            int number1 = scan.nextInt();
+        
+            System.out.println("introduce operation");
+            String operation = scan.next();
+            System.out.print("introduce second number");
+            int number2 = scan.nextInt();
+        
+            System.out.println("First number = " + number1);
+            System.out.println("Operation = " + operation);
+            System.out.println("Second number = " + number2);
 
-        System.out.println("First number = " + number10);
-        System.out.println("Operation = " + operation1);
-        System.out.println("Second number = " + number20);
+            Calculator  myCalc = new Calculator();
+            myCalc.setNumber1(number1);
+            myCalc.setNumber2(number2);
+            myCalc.setOperation(operation);
 
-        Calculator  myCalc = new Calculator();
-        myCalc.setNumber1(number10 );
-        myCalc.setNumber2(number20);
-        myCalc.setOperation(operation1);
-
-        myCalc.calc();
+            myCalc.calc();
+            
+            System.out.println("I would like continue yes/no");
+            String cont = scan.next();
+            
+            if (cont.equals("yes")) {i++;
+               // System.out.println("cont = " + cont + " i = " + i);
+            } else if (cont == "no") {
+                i = 0;
+                break;
+            } else {
+                System.out.println("cont = " + cont + "you must introduce yes or no");
+                break;
+            } 
+        } 
     }
 }
