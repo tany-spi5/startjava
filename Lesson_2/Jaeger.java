@@ -103,21 +103,26 @@ public class Jaeger {
             this.armor = armor;
         }
     }
+    public Jaeger(String x, String y, String z) {
+        modelName=x;
+        mark=y;
+        origin=z;
+    }
 
-    boolean drift() {
+    public boolean drift() {
         System.out.println("You came in drift");
         return true;
     }
 
-    void move() {
+    public void move() {
         System.out.println("You went five steps");
     }
 
-    String scanKaiju() {
+    public String scanKaiju() {
         return "nothing";
     }
-    
-    void useVortexCannon() {
+
+    public void useVortexCannon() {
 
     }
 }

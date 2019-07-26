@@ -1,10 +1,11 @@
 import java.util.Scanner;
 public class CalculatorTest {
     public static void main(String[] args) {
-        int i = 1;
+       // int i = 1;
         
         Scanner scan = new Scanner(System.in);
-        while (i >= 1) {
+      /*  while (i >= 1) {        */
+        do {
             System.out.print("introduce first number");
             int number1 = scan.nextInt();
         
@@ -25,17 +26,18 @@ public class CalculatorTest {
             myCalc.calc();
             
             System.out.println("I would like continue yes/no");
-            String cont = scan.next();
+            String continu = scan.next();
             
-            if (cont.equals("yes")) {i++;
-               // System.out.println("cont = " + cont + " i = " + i);
-            } else if (cont == "no") {
-                i = 0;
+            if (continu.equals("yes")) {   //i++;
+                System.out.println("continu = " + continu);
+            } else if (continu == "no") {
+               // i = 0;
                 break;
             } else {
-                System.out.println("cont = " + cont + "you must introduce yes or no");
-                break;
+                System.out.println("continu = " + continu + "you must introduce yes or no");
+                continu = "yes";
+               // break; 
             } 
-        } 
+        }   while (continu.equals("yes"));
     }
 }
