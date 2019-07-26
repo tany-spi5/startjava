@@ -1,11 +1,9 @@
 import java.util.Scanner;
 public class CalculatorTest {
     public static void main(String[] args) {
-       // int i = 1;
-        
+        int i = 1;
         Scanner scan = new Scanner(System.in);
-      /*  while (i >= 1) {        */
-        do {
+        while (i >= 1) {        
             System.out.print("introduce first number");
             int number1 = scan.nextInt();
         
@@ -24,20 +22,20 @@ public class CalculatorTest {
             myCalc.setOperation(operation);
 
             myCalc.calc();
-            
+            String continuation;
             System.out.println("I would like continue yes/no");
-            String continu = scan.next();
+            continuation = scan.next();
             
-            if (continu.equals("yes")) {   //i++;
-                System.out.println("continu = " + continu);
-            } else if (continu == "no") {
-               // i = 0;
+            if (continuation.equals("yes")) {i++;
+                System.out.println("continuation = " + continuation);
+            } else if (continuation.equals("no")) {
+                i = 0;
                 break;
             } else {
-                System.out.println("continu = " + continu + "you must introduce yes or no");
-                continu = "yes";
+                System.out.println("continuation = " + continuation + "you must introduce yes or no");
+                continuation = "yes";
                // break; 
             } 
-        }   while (continu.equals("yes"));
+        }
     }
 }
