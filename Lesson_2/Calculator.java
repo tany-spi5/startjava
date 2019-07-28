@@ -39,7 +39,7 @@ public class Calculator {
         }
     }
     
-    public void calc() {
+    public void calculate() {
         switch (operation) {
             case "+":
                 System.out.println("sum result = " + (number1 + number2));
@@ -53,7 +53,8 @@ public class Calculator {
             case "/":
                 System.out.println("division result = " + (number1 / number2));
                 break;
-            case "^": int result = 1;
+            case "^": 
+                int result = 1;
                 for(int i = 1; i <= number2; i++) {
                     result *= number1;
                 }

@@ -8,6 +8,17 @@ public class Jaeger {
     private int strength;
     private int armor;
 
+    public Jaeger(String modelName1, String mark1, String origin1, float height1, float weight1, int speed1, int strength1, int armor1) {
+        modelName = modelName1;
+        mark = mark1;
+        origin = origin1;
+        height = height1;
+        weight = weight1;
+        speed = speed1;
+        strength = strength1;
+        armor = armor1;
+    }
+
     public String getModelName() {
         return modelName;
     }
@@ -102,11 +113,6 @@ public class Jaeger {
         } else {
             this.armor = armor;
         }
-    }
-    public Jaeger(String x, String y, String z) {
-        modelName=x;
-        mark=y;
-        origin=z;
     }
 
     public boolean drift() {
