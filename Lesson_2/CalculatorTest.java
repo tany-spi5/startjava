@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class CalculatorTest {
     public static void main(String[] args) {
         String continuation;
@@ -23,29 +24,18 @@ public class CalculatorTest {
             myCalc.setOperation(operation);
 
             myCalc.calculate();
-            System.out.println("I would like continue yes/no");
-            continuation = scan.next();
-            
-            if (continuation.equals("yes")) {
-                System.out.println("continuation = " + continuation);
-            } else if (continuation.equals("no")) {
-                break;
-            } else {
-                System.out.println("continuation = " + continuation + "  you must enter yes or no");
-                //i = 1;
-                while ((continuation != "yes") & (continuation != "no")) {
-                    System.out.println("I would like continue yes/no");
-                    continuation = scan.next();
-                    if (continuation.equals("yes")) {
-                        System.out.println("continuation = " + continuation);
-                        break;
-                    } else if (continuation.equals("no")) {
-                        break;
-                    } else {
-                        System.out.println("continuation = " + continuation + "  you must enter yes or no");
-                    }
+            do {
+                System.out.println("I would like continue yes/no");
+                continuation = scan.next();
+                if (continuation.equals("yes")) {
+                    System.out.println("continuation = " + continuation);
+                    break;
+                } else if (continuation.equals("no")) {
+                    break;
+                } else {
+                    System.out.println("continuation = " + continuation + "  you must enter yes or no");
                 }
-            } 
+            } while ((continuation != "yes") & (continuation != "no"));
         } while (continuation.equals("yes"));
     }
 }
