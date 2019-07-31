@@ -26,17 +26,17 @@ public class CalculatorTest {
             myCalc.calculate();
             do {
                 System.out.println("I would like continue yes/no");
-                continuation = scan.next();
-                if (continuation.equals("yes")) {
+                continuation = scan.nextLine();
+              /*  if (continuation.equals("yes")) {
                     System.out.println("continuation = " + continuation);
                     break;
                 } else if (continuation.equals("no")) {
                     break;
                 } else {
                     System.out.println("continuation = " + continuation + "  you must enter yes or no");
-                }
+                }           */
             } while ((continuation != "yes") & (continuation != "no"));
-            
+
         } while (continuation.equals("yes"));
     }
 }
