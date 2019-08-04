@@ -35,6 +35,8 @@ public class GuessNumber {
         } else if (puzzleNumber > playerNumber) {
             playerNumber = playerNumber + 1;
         } 
-        return playerNumber;
+        
     }     
+
 }
+

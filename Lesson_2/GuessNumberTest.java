@@ -20,27 +20,28 @@ public class GuessNumberTest {
         GuessNumber  myNumber = new GuessNumber(puzzleNumber, playerNumber);
      
         System.out.println(playerNumber);
-        System.out.println(peter.getName());
+        System.out.println(player1);
 
        
         Player  john = new Player(player2, 30);
         myNumber.game();
-        System.out.println(myNumber.game());
-        System.out.println(john.getName());
+        System.out.println(myNumber.getPlayerNumber());
+        System.out.println(player2);
         do {
-        System.out.println(peter.getName());
+        System.out.println(player1);
         myNumber.game();
         if (puzzleNumber == playerNumber) { 
             break; 
         }
-        System.out.println(myNumber.game());
-        System.out.println(john.getName());
+        System.out.println(myNumber.getPlayerNumber());
+        System.out.println(player2);
         myNumber.game();
         if (puzzleNumber == playerNumber) { 
             break; 
         }
-        System.out.println(myNumber.game());
+        System.out.println(myNumber.getPlayerNumber());
         }
         while (puzzleNumber != playerNumber);
+        
     }
 }
