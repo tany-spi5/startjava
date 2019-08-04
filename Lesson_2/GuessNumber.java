@@ -9,11 +9,11 @@ public class GuessNumber {
         return puzzleNumber;
     }
 
-    public void setPuzzleNumber(int puzzleNumber) {
+    public void setPuzzleNumber(int puzzleNumber1) {
         if (puzzleNumber ==.0) {
             System.out.println("zero");
         } else {
-            this.puzzleNumber = puzzleNumber;
+            puzzleNumber = puzzleNumber1;
         }
     }
 
@@ -21,15 +21,16 @@ public class GuessNumber {
         return playerNumber;
     }
 
-    public void setPlayerNumber(int playerNumber) {
+    public void setPlayerNumber(int playerNumber1) {
         if (playerNumber ==.0) {
             System.out.println("zero");
         } else {
-            this.playerNumber = playerNumber;
+            playerNumber = playerNumber1;
         }
     }
+   
 
-    public game() {
+    public void game() {
         if (puzzleNumber == playerNumber) {
             System.out.println("find number =" + playerNumber);
         } else if (puzzleNumber > playerNumber) {
@@ -37,6 +38,6 @@ public class GuessNumber {
         } 
         
     }     
-
+    
 }
 

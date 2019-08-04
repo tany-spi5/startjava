@@ -2,11 +2,11 @@ public class Player {
     private String name;
     private int age;
 
-    public Player(String name1, int age1) {
-        name = name1;
-        age = age1;
+    public Player(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
- /*   public String getName() {
+    public String getName() {
         return name;
     }
     
@@ -31,5 +31,5 @@ public class Player {
     }    
     public void play() {
 
-    }  */
+    }
 }
