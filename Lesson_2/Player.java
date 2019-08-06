@@ -23,13 +23,11 @@ public class Player {
     }
 
     public void setAge(int age) {
-        if (age ==.0) {
+        if (age == 0) {
             System.out.println("zero");
         } else {
             this.age = age;
         }
     }    
-    public void play() {
 
-    }
 }

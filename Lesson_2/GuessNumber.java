@@ -31,12 +31,16 @@ public class GuessNumber {
    
 
     public void game() {
+        if (puzzleNumber > playerNumber) {
+            playerNumber = playerNumber + 1;
+            System.out.println("playerNumber =" + playerNumber);
+        }       
+    }
+    
+     public void verification() {
         if (puzzleNumber == playerNumber) {
             System.out.println("find number =" + playerNumber);
-        } else if (puzzleNumber > playerNumber) {
-            playerNumber = playerNumber + 1;
         } 
-        
     }     
     
 }

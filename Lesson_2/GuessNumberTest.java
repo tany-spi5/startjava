@@ -18,26 +18,19 @@ public class GuessNumberTest {
         GuessNumber  myNumber = new GuessNumber(puzzleNumber1, playerNumber1);
         System.out.println(peter.getName());
         System.out.println(myNumber.getPlayerNumber());
-        
+        myNumber.verification();
         Player  john = new Player(player2, 30);
         System.out.println(john.getName());
         myNumber.game();
-        System.out.println(myNumber.getPlayerNumber());
+        myNumber.verification();
         do {
-            System.out.println(player1);
+            System.out.println(peter.getName());
             myNumber.game();
-            if (myNumber.getPuzzleNumber() == myNumber.getPlayerNumber()) { 
-                System.out.println(myNumber.getPlayerNumber());
-                break; 
-            }
-            System.out.println(myNumber.getPlayerNumber());
-            System.out.println(player2);
+            myNumber.verification();
+            System.out.println(john.getName());
             myNumber.game();
-            if (myNumber.getPuzzleNumber() == myNumber.getPlayerNumber()) { 
-                System.out.println(myNumber.getPlayerNumber());
-                break; 
-            }
-            System.out.println(myNumber.getPlayerNumber());
+            myNumber.verification();
+            
         }
         while (myNumber.getPuzzleNumber() != myNumber.getPlayerNumber());
     }
