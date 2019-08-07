@@ -1,11 +1,10 @@
+import java.util.Random;
 public class GuessNumber {
     private int puzzleNumber;
     private int playerNumber;  // число от 1 до 100
     private String player1;
     private String player2;
-    public GuessNumber(int puzzleNumber1, int playerNumber1, String player1, String player2) {
-        puzzleNumber = puzzleNumber1;
-        playerNumber = playerNumber1;
+    public GuessNumber( String player1, String player2) {
         this.player1=player1;
         this.player2=player2;
     }
@@ -48,24 +47,30 @@ public class GuessNumber {
     }     
     
     public void play() {
-
-    
+        Random random = new Random();
+        puzzleNumber = random.nextInt(100);
+        System.out.println("puzzleNumber = " + puzzleNumber);
+        
         playerNumber = 1;
         System.out.println(player1);
         System.out.println(playerNumber);
+       // Player  peter1 = new Player(player1, 25, playerNumber);
         verification();
         System.out.println(player2);
         game();
+      //  Player  john1 = new Player(player2, 30, playerNumber);
         verification();
         do {
             System.out.println(player1);
             game();
+            Player  peter1 = new Player(player1, 25, playerNumber);
             verification();
             if (puzzleNumber == playerNumber) {
                 break;
             }
             System.out.println(player2);
             game();
+            Player  john1 = new Player(player2, 30, playerNumber);
             verification();
             if (puzzleNumber == playerNumber) {
                 break;

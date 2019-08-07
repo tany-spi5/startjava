@@ -1,11 +1,13 @@
 public class Player {
     private String name;
     private int age;
-
-    public Player(String name, int age) {
+    private int number;
+    public Player(String name, int age, int playerNumber) {
         this.name = name;
         this.age = age;
+        number=playerNumber;
     }
+
     public String getName() {
         return name;
     }
