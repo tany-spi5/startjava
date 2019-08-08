@@ -50,16 +50,7 @@ public class GuessNumber {
         Random random = new Random();
         puzzleNumber = random.nextInt(100);
         System.out.println("puzzleNumber = " + puzzleNumber);
-        
-        playerNumber = 1;
-        System.out.println(player1);
-        System.out.println(playerNumber);
-       // Player  peter1 = new Player(player1, 25, playerNumber);
-        verification();
-        System.out.println(player2);
-        game();
-      //  Player  john1 = new Player(player2, 30, playerNumber);
-        verification();
+        playerNumber = 0;
         do {
             System.out.println(player1);
             game();
