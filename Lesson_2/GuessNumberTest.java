@@ -24,7 +24,7 @@ public class GuessNumberTest {
                 } else {
                     System.out.println("continuation = " + continuation + "  you must enter yes or no");
                 }           
-            } while ((continuation != "yes") & (continuation != "no"));
+            } while ((continuation != "yes") && (continuation != "no"));
 
         } while (continuation.equals("yes"));
 
