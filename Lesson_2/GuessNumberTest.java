@@ -9,8 +9,8 @@ public class GuessNumberTest {
             String player1 =scan.next();
             System.out.println("Enter the second player");
             String player2 =scan.next();
-            Player  peter = new Player(player1, 25);
-            Player  john = new Player(player2, 30);
+            Player  peter = new Player(player1);
+            Player  john = new Player(player2);
             GuessNumber  myNumber = new GuessNumber( player1, player2, peter, john);
             myNumber.play();
             do {

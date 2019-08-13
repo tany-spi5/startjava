@@ -2,9 +2,8 @@ public class Player {
     private String name;
     private int age;
     private int number;
-    public Player(String name, int age) {
+    public Player(String name) {
         this.name = name;
-        this.age = age;
     }
 
     public String getName() {

@@ -4,13 +4,18 @@ public class GuessNumber {
     private int playerNumber;  // число от 1 до 100
     private String player1;
     private String player2;
-    public Player  peter;
-    public Player  john;
+    private  Player  peter;
+    private  Player  john;
+  //  public String Peter.name;
     public GuessNumber( String player1, String player2, Player  peter, Player  john ) {
         this.player1 = player1;
         this.player2 = player2; 
-                    
+
     }
+  
+    public   Player getPeter() {
+        return peter;
+    }     
 
     public int getPuzzleNumber() {
         return puzzleNumber;
@@ -54,20 +59,18 @@ public class GuessNumber {
         puzzleNumber = random.nextInt(100);
         System.out.println("puzzleNumber = " + puzzleNumber);
         playerNumber = 0;
-        Player  peter = new Player(player1, 25);
-        Player  john = new Player(player2, 30);
+        Player  peter = new Player(player1);
+        Player  john = new Player(player2);
         do {
             System.out.println(player1);
-            System.out.println(peter.name);
+            System.out.println(getPeter().name);
             game();
-           // Player  peter1 = new Player(player1, 25, playerNumber);
             verification();
             if (puzzleNumber == playerNumber) {
                 break;
             }
             System.out.println(player2);
             game();
-          //  Player  john1 = new Player(player2, 30, playerNumber);
             verification();
             if (puzzleNumber == playerNumber) {
                 break;
