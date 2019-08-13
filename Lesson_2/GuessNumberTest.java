@@ -5,13 +5,13 @@ public class GuessNumberTest {
         String continuation;
         Scanner scan = new Scanner(System.in); 
         do {
-            System.out.println("Enter the first player");
-            String player1 =scan.next();
-            System.out.println("Enter the second player");
-            String player2 =scan.next();
-            Player  peter = new Player(player1);
-            Player  john = new Player(player2);
-            GuessNumber  myNumber = new GuessNumber( player1, player2, peter, john);
+            System.out.println("Enter the first name1");
+            String name1 =scan.next();
+            System.out.println("Enter the second name2");
+            String name2 =scan.next();
+            Player  peter = new Player(name1);
+            Player  john = new Player(name2);
+            GuessNumber  myNumber = new GuessNumber( name1, name2, peter, john);
             myNumber.play();
             do {
                 System.out.println("I would like continue yes/no");

@@ -2,17 +2,20 @@ import java.util.Random;
 public class GuessNumber {
     private int puzzleNumber;
     private int playerNumber;  // число от 1 до 100
-    private String player1;
-    private String player2;
+    private String name1;
+    private String name2;
     private  Player  peter;
     private  Player  john;
-  //  public String Peter.name;
-    public GuessNumber( String player1, String player2, Player  peter, Player  john ) {
-        this.player1 = player1;
-        this.player2 = player2; 
+    private String name;
+   // private String Peter.name;
+    public GuessNumber( String name1, String name2, Player  peter, Player  john ) {
+        this.name1 = name1;
+        this.name2 = name2; 
 
     }
-  
+    public String getName() {
+        return name;
+    }
     public   Player getPeter() {
         return peter;
     }     
@@ -59,17 +62,16 @@ public class GuessNumber {
         puzzleNumber = random.nextInt(100);
         System.out.println("puzzleNumber = " + puzzleNumber);
         playerNumber = 0;
-        Player  peter = new Player(player1);
-        Player  john = new Player(player2);
+        Player  peter = new Player(name1);
+        Player  john = new Player(name2);
         do {
-            System.out.println(player1);
-            System.out.println(getPeter().name);
+            System.out.println(peter.getName());
             game();
             verification();
             if (puzzleNumber == playerNumber) {
                 break;
             }
-            System.out.println(player2);
+            System.out.println(john.getName());
             game();
             verification();
             if (puzzleNumber == playerNumber) {
