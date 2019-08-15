@@ -1,18 +1,19 @@
 //package com.journaldev.examples;
 import java.util.Scanner;
+
 public class GuessNumberTest {
     public static void main(String[] args) {
         String continuation;
         Scanner scan = new Scanner(System.in); 
         do {
             System.out.println("Enter the first name1");
-            String name1 =scan.next();
+            String name1 = scan.next();
             System.out.println("Enter the second name2");
-            String name2 =scan.next();
-            Player  peter = new Player(name1);
-            Player  john = new Player(name2);
-            GuessNumber  myNumber = new GuessNumber( name1, name2, peter, john);
-            myNumber.play();
+            String name2 = scan.next();
+            Player player1 = new Player(name1);
+            Player player2 = new Player(name2);
+            GuessNumber myGame = new GuessNumber(player1, player2);
+            myGame.play();
             do {
                 System.out.println("I would like continue yes/no");
                 continuation = scan.nextLine();
@@ -25,9 +26,6 @@ public class GuessNumberTest {
                     System.out.println("continuation = " + continuation + "  you must enter yes or no");
                 }           
             } while ((continuation != "yes") && (continuation != "no"));
-
         } while (continuation.equals("yes"));
-
-
     }
 }

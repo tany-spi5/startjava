@@ -2,49 +2,16 @@ import java.util.Random;
 public class GuessNumber {
     private int puzzleNumber;
     private int playerNumber;  // число от 1 до 100
-    private String name1;
-    private String name2;
-    private  Player  peter;
-    private  Player  john;
+    private  Player  player1;
+    private  Player  player2;
     private String name;
-   // private String Peter.name;
-    public GuessNumber( String name1, String name2, Player  peter, Player  john ) {
-        this.name1 = name1;
-        this.name2 = name2; 
-
+    public GuessNumber(Player player1, Player player2 ) {
     }
     public String getName() {
         return name;
     }
-    public   Player getPeter() {
-        return peter;
-    }     
-
-    public int getPuzzleNumber() {
-        return puzzleNumber;
-    }
-
-    public void setPuzzleNumber(int puzzleNumber1) {
-        if (puzzleNumber ==.0) {
-            System.out.println("zero");
-        } else {
-            puzzleNumber = puzzleNumber1;
-        }
-    }
-
-    public int getPlayerNumber() {
-        return playerNumber;
-    }
-
-    public void setPlayerNumber(int playerNumber1) {
-        if (playerNumber ==.0) {
-            System.out.println("zero");
-        } else {
-            playerNumber = playerNumber1;
-        }
-    }
-
-    public void game() {
+   
+    public void game1() {
         if (puzzleNumber > playerNumber) {
             playerNumber = playerNumber + 1;
             System.out.println("playerNumber =" + playerNumber);
@@ -62,17 +29,17 @@ public class GuessNumber {
         puzzleNumber = random.nextInt(100);
         System.out.println("puzzleNumber = " + puzzleNumber);
         playerNumber = 0;
-        Player  peter = new Player(name1);
-        Player  john = new Player(name2);
+     //   Player player1 = new Player(name1);
+     //   Player player2 = new Player(name2);
         do {
-            System.out.println(peter.getName());
-            game();
+            System.out.println(player1.getName());
+            game1();
             verification();
             if (puzzleNumber == playerNumber) {
                 break;
             }
-            System.out.println(john.getName());
-            game();
+            System.out.println(player2.getName());
+            game1();
             verification();
             if (puzzleNumber == playerNumber) {
                 break;
