@@ -1,6 +1,5 @@
 public class Player {
     private String name;
-    private int age;
     private int number;
     public Player(String name) {
         this.name = name;
@@ -18,16 +17,15 @@ public class Player {
         }
     }
 
-    public int getAge() {
-        return age;
+    public int getNumber() {
+        return number;
     }
 
-    public void setAge(int age) {
-        if (age == 0) {
+    public void setNumber(int number) {
+        if (number == 0) {
             System.out.println("zero");
         } else {
-            this.age = age;
+            this.number = number;
         }
-    }    
-
+    }
 }

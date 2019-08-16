@@ -8,9 +8,9 @@ public class GuessNumberTest {
         do {
             System.out.println("Enter the first name1");
             String name1 = scan.next();
+            Player player1 = new Player(name1);
             System.out.println("Enter the second name2");
             String name2 = scan.next();
-            Player player1 = new Player(name1);
             Player player2 = new Player(name2);
             GuessNumber myGame = new GuessNumber(player1, player2);
             myGame.play();
