@@ -1,3 +1,4 @@
+package com.startjava.lesson_2_3.game;
 //package com.journaldev.examples;
 import java.util.Scanner;
 
